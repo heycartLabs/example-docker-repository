@@ -1,0 +1,35 @@
+name: Build Image
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
+
+        - name: Set up Docker Buildx
+          uses: docker/setup-buildx-action@v3
+
+        - name: Login into Github Docker Registery
+          run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+        - name: Install HeyCart-CLI
+          uses: FriendsOfHeyCart/heycart-cli-action@v1
+
+        - name: Make image name small
+          id: image
+          run: |
+            export "name=ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest"
+            echo "image=${name,,}" >> ${GITHUB_OUTPUT}
+
+        - name: Generate image
+          run: docker build -t ${{ steps.image.outputs.image }} .
+
+        - name: Build and push
+          uses: docker/build-push-action@v5
+          with:
+            push: true
+            provenance: false
+            tags: ${{ steps.image.outputs.image }}
