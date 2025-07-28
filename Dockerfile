@@ -4,7 +4,7 @@ ARG BASE_IMAGE=heycart/docker-base:8.3
 
 # pin versions
 FROM ${BASE_IMAGE} as base-image
-FROM ghcr.io/heycart/heycart-cli:latest-php-8.3 as heycart-cli
+FROM heycart/heycart-cli:latest-php-8.3 as heycart-cli
 
 # build
 
