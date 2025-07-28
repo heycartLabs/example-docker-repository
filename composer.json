@@ -6,7 +6,7 @@
         "composer-runtime-api": "^2.0",
         "heycart/administration": "*",
         "heycart/core": "6.7.2.*",
-        "heycart/deployment-helper": "^0.0.25",
+        "heycart/deployment-helper": "^0.0.26",
         "heycart/docker": "^0.3.0",
         "heycart/elasticsearch": "*",
         "heycart/storefront": "*",
