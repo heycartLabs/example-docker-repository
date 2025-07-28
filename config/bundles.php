@@ -15,4 +15,5 @@ return [
     HeyCart\Administration\Administration::class => ['all' => true],
     HeyCart\Elasticsearch\Elasticsearch::class => ['all' => true],
     HeyCart\Storefront\Storefront::class => ['all' => true],
+    Pentatrion\ViteBundle\PentatrionViteBundle::class => ['all' => true],
 ];

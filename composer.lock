@@ -960,21 +960,21 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "4.3.1",
+            "version": "4.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "ac336c95ea9e13433d56ca81c308b39db0e1a2a7"
+                "reference": "acb68b388b2577bb211bb26dc22d20a8ad93d97d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/ac336c95ea9e13433d56ca81c308b39db0e1a2a7",
-                "reference": "ac336c95ea9e13433d56ca81c308b39db0e1a2a7",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/acb68b388b2577bb211bb26dc22d20a8ad93d97d",
+                "reference": "acb68b388b2577bb211bb26dc22d20a8ad93d97d",
                 "shasum": ""
             },
             "require": {
-                "doctrine/deprecations": "^1.1.5",
-                "php": "^8.2",
+                "doctrine/deprecations": "^0.5.3|^1",
+                "php": "^8.1",
                 "psr/cache": "^1|^2|^3",
                 "psr/log": "^1|^2|^3"
             },
@@ -985,7 +985,7 @@
                 "phpstan/phpstan": "2.1.17",
                 "phpstan/phpstan-phpunit": "2.0.6",
                 "phpstan/phpstan-strict-rules": "^2",
-                "phpunit/phpunit": "11.5.23",
+                "phpunit/phpunit": "10.5.46",
                 "slevomat/coding-standard": "8.16.2",
                 "squizlabs/php_codesniffer": "3.13.1",
                 "symfony/cache": "^6.3.8|^7.0",
@@ -1046,7 +1046,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/4.3.1"
+                "source": "https://github.com/doctrine/dbal/tree/4.2.5"
             },
             "funding": [
                 {
@@ -1062,7 +1062,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-22T10:09:51+00:00"
+            "time": "2025-06-26T22:51:46+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2277,21 +2277,21 @@
         },
         {
             "name": "heycart/administration",
-            "version": "v6.7.2.1",
+            "version": "v6.7.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heycart/administration.git",
-                "reference": "121445b29998c210aa1b1e74c217bf54541b20e0"
+                "reference": "4045adab2ed75273700baf5f43d63da4e8bc8065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heycart/administration/zipball/121445b29998c210aa1b1e74c217bf54541b20e0",
-                "reference": "121445b29998c210aa1b1e74c217bf54541b20e0",
+                "url": "https://api.github.com/repos/heycart/administration/zipball/4045adab2ed75273700baf5f43d63da4e8bc8065",
+                "reference": "4045adab2ed75273700baf5f43d63da4e8bc8065",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "^4.2",
-                "heycart/core": "v6.7.2.1",
+                "heycart/core": "v6.7.2.3",
                 "pentatrion/vite-bundle": "^8.1",
                 "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
                 "symfony/framework-bundle": "~7.3.0",
@@ -2321,29 +2321,30 @@
                 "docs": "https://developer.heycart.net",
                 "forum": "https://forum.heycart.net",
                 "issues": "https://github.com/heycart/heycart/issues",
-                "source": "https://github.com/heycart/administration/tree/v6.7.2.1",
+                "source": "https://github.com/heycart/administration/tree/v6.7.2.3",
                 "wiki": "https://developer.heycart.net"
             },
-            "time": "2025-07-27T17:06:23+00:00"
+            "time": "2025-07-28T17:58:08+00:00"
         },
         {
             "name": "heycart/conflicts",
-            "version": "0.5.1",
+            "version": "0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heycart/conflicts.git",
-                "reference": "266b33467c5ebce4f42331ef5617462906c2ab71"
+                "reference": "31b9e3c8cc98af92fead29de210db65b30cd1735"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heycart/conflicts/zipball/266b33467c5ebce4f42331ef5617462906c2ab71",
-                "reference": "266b33467c5ebce4f42331ef5617462906c2ab71",
+                "url": "https://api.github.com/repos/heycart/conflicts/zipball/31b9e3c8cc98af92fead29de210db65b30cd1735",
+                "reference": "31b9e3c8cc98af92fead29de210db65b30cd1735",
                 "shasum": ""
             },
             "require": {
-                "heycart/core": ">=6.7.0.0"
+                "heycart/core": ">=6.7.1.0"
             },
             "conflict": {
+                "doctrine/dbal": ">=4.3.0",
                 "opensearch-project/opensearch-php": ">2.3.1",
                 "phenx/php-font-lib": "<0.5.5",
                 "symfony/symfony": "*",
@@ -2357,22 +2358,22 @@
             "description": "HeyCart 6 conflicting packages",
             "support": {
                 "issues": "https://github.com/heycart/conflicts/issues",
-                "source": "https://github.com/heycart/conflicts/tree/0.5.1"
+                "source": "https://github.com/heycart/conflicts/tree/0.5.2"
             },
-            "time": "2025-07-02T22:07:08+00:00"
+            "time": "2025-07-18T01:43:53+00:00"
         },
         {
             "name": "heycart/core",
-            "version": "v6.7.2.1",
+            "version": "v6.7.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heycart/core.git",
-                "reference": "6bfd8edcafc6f9b781eba4cf6381d31c803a766f"
+                "reference": "1d712049379d62d1104cb6e751ca12fc6bcd7fe4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heycart/core/zipball/6bfd8edcafc6f9b781eba4cf6381d31c803a766f",
-                "reference": "6bfd8edcafc6f9b781eba4cf6381d31c803a766f",
+                "url": "https://api.github.com/repos/heycart/core/zipball/1d712049379d62d1104cb6e751ca12fc6bcd7fe4",
+                "reference": "1d712049379d62d1104cb6e751ca12fc6bcd7fe4",
                 "shasum": ""
             },
             "require": {
@@ -2403,7 +2404,7 @@
                 "ezyang/htmlpurifier": "^4.16",
                 "guzzlehttp/guzzle": "^7.5.0",
                 "guzzlehttp/psr7": "^2.4",
-                "heycart/conflicts": "0.5.1",
+                "heycart/conflicts": "0.5.2",
                 "horstoeko/zugferd": "^1.0.104",
                 "lcobucci/clock": "^3.1.0",
                 "lcobucci/jwt": "^5.5",
@@ -2551,10 +2552,10 @@
                 "docs": "https://developer.heycart.net",
                 "forum": "https://forum.heycart.net",
                 "issues": "https://github.com/heycart/heycart/issues",
-                "source": "https://github.com/heycart/core/tree/v6.7.2.1",
+                "source": "https://github.com/heycart/core/tree/v6.7.2.3",
                 "wiki": "https://developer.heycart.net"
             },
-            "time": "2025-07-27T15:06:48+00:00"
+            "time": "2025-07-28T17:50:37+00:00"
         },
         {
             "name": "heycart/deployment-helper",
@@ -2655,23 +2656,23 @@
         },
         {
             "name": "heycart/elasticsearch",
-            "version": "v6.7.2.1",
+            "version": "v6.7.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heycart/elasticsearch.git",
-                "reference": "ea41316f5a37c9ee9cf453504c57aaf7e669636b"
+                "reference": "7adde32d0b6a255e21fa5e62d70b3f2f5f1d3c99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heycart/elasticsearch/zipball/ea41316f5a37c9ee9cf453504c57aaf7e669636b",
-                "reference": "ea41316f5a37c9ee9cf453504c57aaf7e669636b",
+                "url": "https://api.github.com/repos/heycart/elasticsearch/zipball/7adde32d0b6a255e21fa5e62d70b3f2f5f1d3c99",
+                "reference": "7adde32d0b6a255e21fa5e62d70b3f2f5f1d3c99",
                 "shasum": ""
             },
             "require": {
                 "async-aws/core": "^1.22",
                 "doctrine/dbal": "^4.2",
                 "ext-curl": "*",
-                "heycart/core": "v6.7.2.1",
+                "heycart/core": "v6.7.2.3",
                 "monolog/monolog": "^3.3.1",
                 "opensearch-project/opensearch-php": "^2.3.1",
                 "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
@@ -2707,29 +2708,29 @@
                 "docs": "https://developer.heycart.net",
                 "forum": "https://forum.heycart.net",
                 "issues": "https://github.com/heycart/heycart/issues/",
-                "source": "https://github.com/heycart/elasticsearch/tree/v6.7.2.1",
+                "source": "https://github.com/heycart/elasticsearch/tree/v6.7.2.3",
                 "wiki": "https://developer.heycart.net"
             },
-            "time": "2025-07-27T17:06:19+00:00"
+            "time": "2025-07-28T17:58:00+00:00"
         },
         {
             "name": "heycart/storefront",
-            "version": "v6.7.2.1",
+            "version": "v6.7.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heycart/storefront.git",
-                "reference": "583a3f83b769783418fa3e6134fc88e495bc97ce"
+                "reference": "cc00679c1f715d88eaf6c0059396c3b20543c2c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heycart/storefront/zipball/583a3f83b769783418fa3e6134fc88e495bc97ce",
-                "reference": "583a3f83b769783418fa3e6134fc88e495bc97ce",
+                "url": "https://api.github.com/repos/heycart/storefront/zipball/cc00679c1f715d88eaf6c0059396c3b20543c2c7",
+                "reference": "cc00679c1f715d88eaf6c0059396c3b20543c2c7",
                 "shasum": ""
             },
             "require": {
                 "cocur/slugify": "^4.3.0",
                 "doctrine/dbal": "^4.2",
-                "heycart/core": "v6.7.2.1",
+                "heycart/core": "v6.7.2.3",
                 "meyfa/php-svg": "^0.16.1",
                 "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
                 "scssphp/scssphp": "v1.12.0",
@@ -2782,10 +2783,10 @@
                 "docs": "https://developer.heycart.net",
                 "forum": "https://forum.heycart.net",
                 "issues": "https://github.com/heycart/heycart/issues",
-                "source": "https://github.com/heycart/storefront/tree/v6.7.2.1",
+                "source": "https://github.com/heycart/storefront/tree/v6.7.2.3",
                 "wiki": "https://developer.heycart.net"
             },
-            "time": "2025-07-27T17:06:24+00:00"
+            "time": "2025-07-28T17:58:01+00:00"
         },
         {
             "name": "horstoeko/mimedb",
