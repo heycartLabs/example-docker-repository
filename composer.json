@@ -5,9 +5,9 @@
     "require": {
         "composer-runtime-api": "^2.0",
         "heycart/administration": "*",
-        "heycart/core": "6.5.8.*",
-        "heycart/deployment-helper": "^0.0.4",
-        "heycart/docker": "^0.1.0",
+        "heycart/core": "6.7.2.*",
+        "heycart/deployment-helper": "^0.0.25",
+        "heycart/docker": "^0.3.0",
         "heycart/elasticsearch": "*",
         "heycart/storefront": "*",
         "symfony/flex": "~2",
